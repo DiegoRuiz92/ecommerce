@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 
 class SubcategorySeeder extends Seeder
 {
@@ -13,6 +14,82 @@ class SubcategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        $subcategories=[
+            /*Celulares y tablets*/ 
+            [
+                'category_id' => 1,
+                'name' => 'Celulares y Smartphones',
+                'slug' => Str::slug('Celulares y Smartphones'),
+                'color' => true
+            ],
+            [
+                'category_id' => 1,
+                'name' => 'Accesorios para Celulares',
+                'slug' => Str::slug('Accesorios para Celulares'),
+            ],
+            [
+                'category_id' => 1,
+                'name' => 'Smartwatch',
+                'slug' => Str::slug('Smartwatch'),
+            ],
+            /*TV, Audio y Vídeo*/
+            [
+                'category_id' => 2,
+                'name' => 'Televisores',
+                'slug' => Str::slug('Televisores'),
+            ],
+            [
+                'category_id' => 2,
+                'name' => 'Audio',
+                'slug' => Str::slug('Audio'),
+            ],
+            [
+                'category_id' => 2,
+                'name' => 'Cámaras',
+                'slug' => Str::slug('Cámaras'),
+            ],
+            /*Consolas y Videojuegos*/
+            [
+                'category_id' => 3,
+                'name' => 'Playstation',
+                'slug' => Str::slug('Playstation'),
+            ],
+            [
+                'category_id' => 3,
+                'name' => 'Xbox',
+                'slug' => Str::slug('Xbox'),
+            ],
+            [
+                'category_id' => 3,
+                'name' => 'Nintendo',
+                'slug' => Str::slug('Nintendo'),
+            ],
+            [
+                'category_id' => 3,
+                'name' => 'Videojuegos',
+                'slug' => Str::slug('Videojuegos'),
+            ],
+            /*Computación*/
+            [
+                'category_id' => 4,
+                'name' => 'Laptops',
+                'slug' => Str::slug('Laptops'),
+            ],
+            [
+                'category_id' => 4,
+                'name' => 'Computadores de Escritorio',
+                'slug' => Str::slug('Computadores de Escritorio'),
+            ],
+            [
+                'category_id' => 4,
+                'name' => 'Accesorios',
+                'slug' => Str::slug('Accesorios'),
+            ],
+            [
+                'category_id' => 4,
+                'name' => 'Almacenamiento',
+                'slug' => Str::slug('Almacenamiento'),
+            ],
+        ];
     }
 }
